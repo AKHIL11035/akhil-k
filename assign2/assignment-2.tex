@@ -1,0 +1,981 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-20}
+\title{VECTOR ALGEBRA}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+\thesection{A.FILL IN THE BLANKS}
+\begin{enumerate}
+    \item Let $\Vec{A}$,$\vec{B}$,$\vec{C}$ be the vectors of length 3,4,5 respectively .Let $\vec{A}$ be perpendicular to $\vec{A}$+$\vec{B}$,$\vec{B}$ to $\vec{C}$+$\vec{A}$ and $\vec{C}$ to $\vec{A}$+$\vec{B}$. The the length of vector $\vec{A}$+$\vec{B}$+$\vec{C}$ is
+    \hfill{(1981-2marks)}
+    \item The unit vector perpendicular to the plane determined by P$(1,-1,2)$,Q$(2,0,1)$ and R$(0,2,1)$ is
+    \hfill{(1983-1mark)}
+    \item The area of the triangle whose vertices are A$(1,-1,2)$, B$(2,0,-1)$, C$(3,-1,2)$ is
+    \hfill{(1983-1 mark)}
+    \item A,B,C and D,are four points in a plane with position vectors a,b,c and d respectively such that $(\vec{a}-\vec{d})(\vec{b}-\vec{c})=(\vec{b}-\vec{d})(\vec{c}-\vec{a})=0$
+    The point D, then,is the...... of the triangle ABC.
+    \hfill{(1984-2 marks)}
+    \item If $ 
+ \begin{vmatrix}
+a & a^2 & 1+a^3\\
+b & b^2 & 1+b^3\\
+c & c^2 & 1+c^3
+\end{vmatrix}
+=0$ ant the vectors $\vec{A}$=(1,a,$a^2$),$\vec{B}$=(1,b,$b^2$),$\vec{C}$=(1,c,$c^2$), are co-planar, then the product abc=....
+\hfill{(1985-2 marks)}
+\item If $\vec{A}$$\vec{B}$$\vec{C}$ are the three non-coplanar vectors, then- $\frac{\vec{A}.\vec{B}\times\vec{C}}{\vec{C}\times\vec{A}.\vec{B}}+\frac{\vec{B}.\vec{A}\times\vec{C}}{\vec{C}.\vec{A}\times\vec{B}}=$.......
+\hfill{(1985-2 marks)}
+\item $\vec{A}=(1,1,1)$, $\vec{C}=(0,1,-1)$ are given vectors, then a vector B satisfying the given equations $\vec{A}\times\vec{B}=\vec{C}$ and $\vec{A}.\vec{B}=3$.......
+\hfill{1985-2 marks}
+\item If the vectors $a\hat{i}+\hat{j}+\hat{k}$,$\hat{i}+b\hat{j}+\hat{k}$ and $\hat{i}+\hat{j}+c\hat{k}$ $(a\neq b\neq c\neq 1)$ are co-planar, then the value of the $\frac{1}{(1-a)}$+$\frac{1}{(1-b)}$+$\frac{1}{(1-c)}$=......
+\hfill{(1987-2 marks)}
+\item Let $b=4\hat{i}+3\hat{j}$ and $\vec{c}$ be two vectors perpendicular to each other in the xy-plane.All vectors in the same plane having projections 1 and 2 along $\vec{b}$ and $\vec{c}$, respectively, are given by......
+\hfill{(1987-2 marks)}
+\item The components of a vectors $\vec{a}$ along and  perpendicular to a non-zero vector $\vec{b}$ are ...... and.......respectively.
+\hfill{(1988-2 marks)}
+\item Given that $\vec{a}=(1,1,1)$, $\vec{c}=(0,1,-1)$,$\vec{a}.\vec{b}=3$ and $\vec{a}\times\vec{b}=\vec{c}$,then $\vec{b}=$.....
+\hfill{(1991-2 marks)}
+\item A unit vector coplanar with $\hat{i}+\hat{j}+2\hat{k}$ and $\hat{i}+2\hat{j}+\hat{k}$ and perpendicular to $\hat{i}+\hat{j}+\hat{k}$ is......
+\hfill{(1992-2 marks)}
+\item A unit vector perpendicular to the plane determined by the points P$(1,-1,2)$Q(2,0,-1) and R(0,2,1) is.......
+\hfill{(1994-2 marks)}
+\item A nonzero vector $\vec{a}$ is parallel to the line of intersection of the the plane determined by the vectors $\hat{i}$,$\hat{i}+\hat{j}$ and the plane determined by the vectors $\hat{i}-\hat{j}$,$\hat{i}+\hat{k}$.The angle between $\$vec{a}$ and the vector $\hat{i}-2\hat{j}+2\hat{k}$ is......
+\hfill{(1996-2 marks)}
+\item If $\vec{b}$ and $\vec{c}$ are two non-collinear unit vectors and $\vec{a}$ is any vector, then $(\vec{a}.\vec{b})\vec{b}+(\vec{a}.\vec{c})\vec{c}+\frac{\vec{a}.(\vec{b\times\vec{c}})}{|\vec{b}\times\vec{c}|}(\vec{b}\times\vec{c})=$.....
+\hfill{(1996-2 marks)}
+\end{enumerate}
+\end{document}
