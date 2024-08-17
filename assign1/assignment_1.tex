@@ -1,0 +1,4049 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{CHAPTER-9}
+\title{CONIC SECTIONS}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\thesection{G .COMPREHENSION QUESTIONS }
+\begin{enumerate}
+\item  The equation of the locus of the point whose distances from the point P and the line AB are equal, is
+\end{enumerate}
+
+\begin{enumerate}
+     \item $9x^2+y^2-6xy-54x-62y+241=0$
+     \item $x^2+9y^2+6xy-54x-62y-241=0$
+     \item $9x^2+9y^2-6xy-54x-62y-241=0$
+     \item $x^2+y^2-2xy+27x+31y-120=0$
+\end{enumerate}
+\subsection{Passage 4} 
+\begin{enumerate}
+\item Let PQ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at P and Q meet at a point lying on the line $y=2x+a$,$a>0$
+Length of the chord PQ is
+
+\hfill(JEE Adv.2013)        
+\begin{enumerate}
+    \item 7a
+    \item 5a
+    \item 2a
+    \item 3a
+\end{enumerate}
+
+\item If chord PQ subtends an angle $\theta$  at the vertex of $y^2=4ax$
+\hfill(JEE Adv.2013)
+
+\begin{enumerate}
+    \item $\frac{2}{3}\sqrt{7}$
+    
+    \item $\frac{-2}{3}\sqrt{7}$
+    
+    \item $\frac{2}{3}\sqrt{5}$
+    
+    \item $\frac{-2}{3}\sqrt{5}$
+\end{enumerate}
+\end{enumerate}
+\subsection{Passage 5}
+\begin{enumerate}
+\item[] Let a,r,s,t be nonzero real numbers. Lets P$(at^2,2as)$,Q,R$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines QR and PK are parallel,where K is the point $(2a,0)$
+\end{enumerate}
+\begin{enumerate}
+\item The value of r is 
+\hfill(JEE Adv.2014)
+\begin{enumerate}
+    \item $\frac{-1}{t}$ 
+    \item $\frac{t^2+1}{t}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+\end{enumerate}
+\item If $st=1$, then the tangent at P and the normal at S to the
+parabola meet at a point whose ordinate is 
+\begin{enumerate}
+    \item $\frac{a(t^2+1)^2}{t^3}$
+    \item $\frac{a(t^2+1)}{2t^3}$
+    \item $\frac{1}{t}$
+    \item $\frac{t^2-1}{t}$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Passage 6}
+\begin{enumerate}
+\item[] Let ${F_1}$($x_1$,0) and  ${F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $x^2/9 +y^2/8 =1$. Suppose a parabola having vertex at the origin and focus at $F_2$ intersects the ellipse at point M in the first quadrant and the point N in the first quadrant.
+\item The orthocentre of the triangle $F_1$MN is
+
+         \hfill(JEE Adv. 2016)
+\begin{enumerate}
+     \item $(\frac{-9}{10},0)$   
+     \item $(\frac{2}{3},0)$     
+     \item $($9/10$,0)$ 
+    \item $(\frac{2}{3},\sqrt{6})$ 
+    \end{enumerate}
+\item If the tangents to the ellikpse at M and N meet at R and the normal to the parabola at M meets the X-Axis at Q, the the ratio of area of the triangle MQR to the area of the quadrilateral M$F_1$N$F_2$ is
+\hfill(JEE Adv.2016)
+\begin{enumerate}
+    \item 3:4
+    \item 4:5
+    \item 5:8
+    \item 2:3
+\end{enumerate}
+\end{enumerate}
+\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\begin{enumerate}
+\item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
+STATEMENT-2: A Parabola is symmetric about its axis.
+\hfill(2007-3 marks)
+\begin{enumerate}
+    \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
+\end{enumerate}
+\end{enumerate}
+\thesection{I. INTEGER VALUE CORRECT TYPE}
+\begin{enumerate}
+\item The lime $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
+\hfill(2010)
+\item Consider the parabola $y^2=8x$ . Let $\Delta_1$ be the area of the triangle formed by the end points of its latus rectum and the point p$(\frac{1}{2},2)$ on the parabola and $\Delta_2$ be the area of the triangle formed by drawing tangents at P and at the end points of the latus rectum.Then $\frac{\Delta_1}{\Delta_2}$ is 
+\hfill(2011)
+\item Let S be the focus of the parabola $y^2=8x$ and let PQ be the common chord of the circle $x^2+y^2-2x-4y=0$ and the given parabola. The area of the triangle PQS is
+\hfill(2012)
+\item A Vertical line passing through point $(h,0)$ intersects the ellipse   at the points  P and Q . Let the tangents to the ellipse at P and Q meet at the points R.If $\Delta(h)$= area of the triangle PQR, $\Delta_1$= ma
+then 
+\hfill(JEE Adv.2013)
+\begin{enumerate}
+    \item $g(x)$ is continuous but not differentiable at a
+    \item $g(x)$ is differentiable on R
+    \item $g(x)$ is continuous but not differentiable at b
+    \item $g(x)$ is continuous and differentiable either(a) or (b) but not both 
+    \end{enumerate}
+\item If the normal of the parabola $y^2=4x$ drawn at the end points of its latusrectum are the tangents of th circle $(x-3)^2+(y+2)^2=r^2$, then the value of $r^2$ is
+\hfill(JEE Adv.2015)
+\item Let the curve C be the mirror image of the parabola $y^2=4x$ with respect to the line $x+y+4=0$.IfA and B are the points of the intersection of C with the line $y=-5$,then the distance between A and B is
+\hfill(JEE Adv.2015)
+\item Suppose that the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{5}=1$ are ($f_1$,0) and ($f_2$,0) where $f_1>0$ and $f_1<0$.Let $P_1$ and $P_2$ be two parabolas with a common vertex at $(0,0)$ and with foci at ($f_1$,0) and (2$f_2$,0),respectively. Let $T_1$ be a tangent to $P_1$ which passes through (2$f_2$,0) and $T_2$ be a tangent to $P_2$ which passes through ($f_1$,0).If $m_1$ is the slope of $T_1$ and $m_2$ is the slope of $T_2$,then the value of
+\hfill(JEE Adv. 2015)
+\end{enumerate}
+
+
+\end{document}
+
+
+    
+    
+     
+
+
+
