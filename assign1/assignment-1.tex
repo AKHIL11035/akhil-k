@@ -1,7 +1,15 @@
-%iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -17,8 +25,8 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}                                        
-%\def\inputGnumericTable{}                                 
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
 \usepackage{array}                                            
@@ -28,23 +36,15 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{float}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
 
 
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{problem}{Problem}
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{example}{Example}[section]
-\newtheorem{definition}[problem]{Definition}
-\newcommand{\BEQA}{\begin{eqnarray}}
-\newcommand{\EEQA}{\end{eqnarray}}
-\newcommand{\define}{\stackrel{\triangle}{=}}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
 
 % Marks the beginning of the document
 \begin{document}
@@ -54,12 +54,12 @@
 \title{CONIC SECTIONS}
 \author{EE24BTECH11035 - KOTHAPALLI AKHIL}
 \maketitle
-\newpage
+
 \bigskip
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\thesection{G .COMPREHENSION QUESTIONS }
+\section*{G .COMPREHENSION QUESTIONS }
 \begin{enumerate}
 \item  The equation of the locus of the point whose distances from the point $\Vec{P}$ and the line $AB$ are equal, is
 \end{enumerate}
@@ -70,7 +70,7 @@
      \item $9x^2+9y^2-6xy-54x-62y-241=0$
      \item $x^2+y^2-2xy+27x+31y-120=0$
 \end{enumerate}
-\subsection{Passage 4} 
+\subsection*{Passage 4} 
 \begin{enumerate}
 \item Let $PQ$ be a focal chord of the parabola $y^2=4ax$.The tangents to the parabola at $\Vec{P}$ and $\Vec{Q}$ meet at a point lying on the line $y=2x+a$,$a>0$
 Length of the chord $PQ$ is
@@ -96,7 +96,7 @@ Length of the chord $PQ$ is
     \item $\frac{-2}{3}\sqrt{5}$
 \end{enumerate}
 \end{enumerate}
-\subsection{Passage 5}
+\subsection*{Passage 5}
 \begin{enumerate}
 \item[] Let $a$,$r$,$s$,$t$ be nonzero real numbers. Lets $\Vec{P}$$(at^2,2as)$,$\Vec{Q}$,$\Vec{R}$$(as^2,2as)$ be distinct points on the parabola $y^2=4ax$.suppose that PQ is the focal chord and lines $QR$ and $PK$ are parallel,where $K$ is the point $(2a,0)$
 \end{enumerate}
@@ -118,7 +118,7 @@ parabola meet at a point whose ordinate is
     \item $\frac{t^2-1}{t}$
     \end{enumerate}
 \end{enumerate}
-\subsection{Passage 6}
+\subsection*{Passage 6}
 \begin{enumerate}
 \item[] Let $\vec{F_1}$($x_1$,0) and  $\vec{F_2}$($x_2$,0) for $x_1<0$ and $x_2>0$, be the focii of the ellipse $\frac{x^2}{9}+\frac{y^2}{8} =1$. Suppose a parabola having vertex at the origin and focus at $\vec{F_2}$ intersects the ellipse at point $\Vec{M}$ in the first quadrant and the point $\Vec{N}$ in the first quadrant.
 \item The orthocentre of the triangle $F_1$MN is
@@ -139,7 +139,7 @@ parabola meet at a point whose ordinate is
     \item $2:3$
 \end{enumerate}
 \end{enumerate}
-\thesection{H. ASSERTION AND REASON TYPE QUESTIONS}
+\section*{H. ASSERTION AND REASON TYPE QUESTIONS}
 \begin{enumerate}
 \item STATEMENT-1: The curve $y=\frac{-x^2}{2}+x+1$ is symmetric with respect to the line $x=1$.because
 STATEMENT-2: A Parabola is symmetric about its axis.
@@ -148,7 +148,7 @@ STATEMENT-2: A Parabola is symmetric about its axis.
     \item Statement-1 is True,Statement-2 is True;Statement-2 is a correct explanation for Statement-1\item  Statement-1 is True,Statement-2 is True;Statement-2 is NOT a correct explanation for Statement-1\item Statement-1 is True,Statement-2 is False\item Statement-1 is False,Statement-2 is True
 \end{enumerate}
 \end{enumerate}
-\thesection{I. INTEGER VALUE CORRECT TYPE}
+\section*{I. INTEGER VALUE CORRECT TYPE}
 \begin{enumerate}
 \item The line $2x+y=1$ is the tangent to the hyperbola $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If this line passes through the point of intersection of the nearest directrix and the X-axis, then the eccentricity of the hyperbola is
 \hfill(2010)
