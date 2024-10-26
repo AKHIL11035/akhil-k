@@ -1,0 +1,28 @@
+% f1.tex
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{% % Adjusted width from 1\textwidth to 0.5\textwidth
+        \begin{circuitikz}
+            \tikzstyle{every node}=[font=\small]
+            \draw (2.75,21) to[R,l={ \small 1K}] (4.75,21);
+            \draw (4.75,21) to[R] (6.75,21);
+            \draw (2.75,19.25) to[R,l={ \small 1K}] (4.75,19.25);
+            \draw (4.75,19.25) to[R,l={ \small 1K}] (6.75,19.25);
+            \draw (4.75,21) to[R,l={ \small 1K}] (6.75,21);
+            \draw [line width=0.5pt] (4.75,21) to[R] (4.75,19.25);
+            \draw [line width=0.5pt] (6.75,21) to[short] (6.75,19.25);
+            \draw [line width=0.5pt] (2.75,21) to[short] (2.75,19.25);
+            \draw [line width=0.5pt] (1.5,20.25) to[short] (2.75,20.25);
+            \draw [line width=0.5pt] (6.75,20.25) to[short] (7.75,20.25);
+            \draw [line width=0.5pt] (1.5,20.25) to[short] (1.5,17.75);
+            \draw [line width=0.5pt] (7.75,20.25) to[short] (7.75,17.75);
+            \draw (1.5,17.75) to[battery1,l=$6V$] (7.75,17.75);
+            \node [font=\normalsize] at (2.5,20.5) {A};
+            \node [font=\normalsize] at (7,20.5) {B};
+            \node [font=\normalsize] at (4.75,21.25) {C};
+            \node [font=\small] at (4.75,19) {D};
+        \end{circuitikz}
+    }
+    
+    \label{fig:my_label}
+\end{figure}

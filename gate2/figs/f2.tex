@@ -1,0 +1,27 @@
+% f2.tex
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+        \begin{circuitikz}
+            \tikzstyle{every node}=[font=\LARGE]
+            \draw (5,11) rectangle (10,8.25);  % First block
+            \draw (12.5,10.75) rectangle (17.5,8.25);  % Second block
+            \draw (20.5,12) rectangle (23.75,7);  % Third block
+
+            % Arrows between blocks
+            \draw [->, >=Stealth] (10,9.75) -- (12.5,9.75);  % Between G1 and G2
+            \draw [->, >=Stealth] (17.5,9.5) -- (20.5,9.5);  % Between G2 and 1/G3
+            \draw [->, >=Stealth] (2.75,9.75) -- (4.75,9.75);  % Input arrow
+            \draw [->, >=Stealth] (24,9.5) -- (26,9.5);  % Output arrow
+
+            % Labels for input, output, and blocks
+            \node [font=\Huge] at (1.75,9.75) {$Input$};
+            \node [font=\Huge] at (27.5,9.5) {$Output$};
+            \node [font=\LARGE] at (7.25,9.5) {$G_1$};
+            \node [font=\LARGE] at (14.75,9.5) {$G_2$};
+            \node [font=\LARGE] at (22,9.5) {$\frac{1}{G_3}$};
+        \end{circuitikz}
+    }
+    
+    \label{fig:my_label}
+\end{figure}

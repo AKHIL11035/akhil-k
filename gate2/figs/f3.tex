@@ -1,0 +1,20 @@
+% f3.tex
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+        \begin{circuitikz}
+            \tikzstyle{every node}=[font=\large]
+          
+            % Removed grid line from here
+            \draw  (6.5,11) rectangle (8.25,10);
+            \draw [short] (6.5,10.5) -- (4.75,10.5);
+            \draw [short] (8.25,10.5) -- (9.75,10.5);
+            \draw (4.75,10.5) to[american voltage source,l={ \large $V_s$}] (4.75,8);
+            \draw (9.75,10.5) to[R,l={ \large 10K}] (9.75,8);
+            \draw (9.75,8) to[short] (4.75,8);
+            \node [font=\large] at (6.25,10.75) {$a$};
+            \node [font=\large] at (8.5,10.75) {$b$};
+        \end{circuitikz}
+    }%
+    \label{fig:my_label}
+\end{figure}

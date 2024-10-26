@@ -1,0 +1,187 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[article]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                       
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{2009-EE-1-12}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+{\let\newpage\relax\maketitle}
+
+\begin{enumerate}
+\item The pressure coil of a dynamometer type wattmeter is  
+\begin{enumerate}
+\item highly inductive
+\item highly resistive
+\item purely resistive
+\item purely inductive
+\end{enumerate}
+
+\item The measurement system shown in the figure uses three sub-systems in cascade whose gains are specified as $G_1$, $G_2$, and $\frac{1}{G_3}$. The relative small errors associated with each respective subsystem $G_1$, $G_2$, and $G_3$ are $\epsilon_1$, $\epsilon_2$, and $\epsilon_3$. The error associated with the output is:  
+\input{figs/f2}
+\begin{enumerate}
+\item $\epsilon_1 + \epsilon_2 + \frac{1}{\epsilon_3}$
+\item $\frac{\epsilon_1 \cdot \epsilon_2}{\epsilon_3}$
+\item $\epsilon_1 + \epsilon_2 - \epsilon_3$
+\item $\epsilon_1 + \epsilon_2 + \epsilon_3$
+\end{enumerate}
+
+\item The following circuit has a source voltage $V_s$ as shown in the graph. The current through the circuit is also shown. The element connected between $a$ and $b$ could be:  
+\input{figs/f3}
+\begin{figure}[ht]
+\centering
+    \begin{minipage}[b]{0.3\linewidth} % Decrease the width to make the images smaller
+        \includegraphics[width=0.9\linewidth]{graphs/Figure_1.png} % Adjust the width of the image 
+    \end{minipage}
+    \hspace{0.02\linewidth} % Smaller horizontal space between the figures
+    \begin{minipage}[b]{0.3\linewidth} % Decrease the width to make the images smaller
+        \includegraphics[width=0.9\linewidth]{graphs/Figure_2.png} % Adjust the width of the image 
+    \end{minipage}
+\end{figure}
+\begin{enumerate}
+\item \input{figs/a}
+\item \input{figs/b}
+\item \input{figs/c}
+\item \input{figs/d}
+\end{enumerate}
+
+
+
+\item The two inputs of a CRO are fed with two stationary periodic signals. In the X-Y mode, the screen shows a figure which changes from ellipse to circle and back to ellipse with its major axis changing orientation slowly and repeatedly. The following inference can be made from this:
+
+\begin{enumerate}
+\item The signals are not sinusoidal
+\item The amplitudes of the signals are very close but not equal
+\item The signals are sinusoidal with their frequencies very close but not equal
+\item There is a constant but small phase difference between the signals
+\end{enumerate}
+
+\item The increasing order of speed of data access for the following devices is:
+
+(i) Cache Memory \\
+(ii) CDROM \\
+(iii) Dynamic RAM \\
+(iv) Processor Registers \\
+(v) Magnetic Tape \\
+
+\begin{enumerate}
+\item (v), (ii), (iii), (iv), (i)
+\item (v), (iii), (ii), (i), (iv)
+\item (ii), (i), (iii), (iv), (v)
+\item (v), (iv), (i), (iii), (ii)
+\end{enumerate}
+
+\item A field excitation of $20 \, \text{A}$ in a certain alternator results in an armature current of $400 \, \text{A}$ in short circuit and a terminal voltage of $2000 \, \text{V}$ on open circuit. The magnitude of the internal voltage drop within the machine at a load current of $200 \, \text{A}$ is:
+
+\begin{enumerate}
+\item $1 \, \text{V}$
+\item $10 \, \text{V}$
+\item $100 \, \text{V}$
+\item $1000 \, \text{V}$
+\end{enumerate}
+
+\item The current through the $2 \, \text{k}\Omega$ resistance in the circuit shown is:
+\input{figs/f1}
+\begin{enumerate}
+\item $0 \, \text{mA}$
+\item $1 \, \text{mA}$
+\item $2 \, \text{mA}$
+\item $6 \, \text{mA}$
+\end{enumerate}
+
+\item Out of the following plant categories, the base load power plants are:
+
+(i) Nuclear \\
+(ii) Run-of-river \\
+(iii) Pump Storage \\
+(iv) Diesel \\
+
+\begin{enumerate}
+\item (i) and (ii)
+\item (ii) and (iii)
+\item (i), (ii) and (iv)
+\item (i), (iii) and (iv)
+\end{enumerate}
+
+\item For a fixed value of complex power flow in a transmission line having a sending end voltage $V$, the real power loss will be proportional to:
+
+\begin{enumerate}
+\item $V$
+\item $V^2$
+\item $\frac{1}{V^2}$
+\item $\frac{1}{V}$
+\end{enumerate}
+
+\item How many 200W/220V incandescent lamps connected in series would consume the same total power as a single 100W/220V incandescent lamp?
+
+\begin{enumerate}
+\item not possible
+\item 4
+\item 3
+\item 2
+\end{enumerate}
+
+\item A Linear Time Invariant system with an impulse response $h(t)$ produces output $y(t)$ when input $x(t)$ is applied. When the input $x(t - \tau)$ is applied to a system with impulse response $h(t - \tau)$, the output will be
+
+\begin{enumerate}
+\item $y(t)$
+\item $y(2(t - \tau))$
+\item $y(t - \tau)$
+\item $y(t - 2\tau)$
+\end{enumerate}
+
+\item The nature of feedback in the opamp circuit shown is
+\input{figs/f4}
+\begin{enumerate}
+\item Current - Current feedback
+\item Voltage - Voltage feedback
+\item Current - Voltage feedback
+\item Voltage - Current feedback
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
+

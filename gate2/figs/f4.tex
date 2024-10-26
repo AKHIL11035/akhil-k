@@ -1,0 +1,30 @@
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.3\textwidth}{!}{%
+
+\begin{circuitikz}
+
+\tikzstyle{every node}=[font=\small]
+\draw (9.75,12.5) node[op amp,scale=1] (opamp2) {};
+\draw (opamp2.+) to[short] (8.25,12);
+\draw  (opamp2.-) to[short] (8.25,13);
+\draw (10.95,12.5) to[short](11.25,12.5);
+\draw (6.75,13) to[R] (8.25,13);
+\draw (6.75,13) to (6.75,12.5) node[ground]{};
+\draw (8.25,13) to[short] (8.25,14.5);
+\draw (8.25,14.5) to[short] (11.75,14.5);
+\draw (11.75,14.5) to[R] (11.75,12.5);
+\draw (11.25,12.5) to[short, -o] (13,12.5) ;
+\draw (9.75,13.75) to[short] (9.75,13);
+\draw (9.75,12) to[short] (9.75,11.25);
+\draw (8.25,12) to[sinusoidal voltage source, sources/symbol/rotate=auto] (8.25,10.5);
+\draw (8.25,10.5) to (7.75,10.5) node[ground]{};
+\node [font=\small] at (7.5,13.5) {1 k$\Omega$};
+\node [font=\small] at (9.75,14) {+6V};
+\node [font=\small] at (9.75,11) {-6V};
+\node [font=\small] at (12.5,13.5) {2 k$\Omega$};
+\node [font=\small] at (13.25,12) {V(out)};
+\node [font=\small] at (7.5,11) {V(in)};
+\end{circuitikz}
+}%
+\end{figure}
