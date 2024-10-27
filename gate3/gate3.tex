@@ -1,0 +1,225 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[article]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                       
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{2012-PH-'40-52'}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+{\let\newpage\relax\maketitle}
+
+
+\begin{enumerate}
+    \item The ground state wavefunction for the hydrogen atom is given by 
+  \begin{equation*}
+     \psi_{100} = \frac{1}{\sqrt{4 \pi}} \left(\frac{1}{a_0}\right)^{3/2} e^{-r/a_0},  
+  \end{equation*}  
+    where $a_0$ is the Bohr radius.
+
+    The plot of the radial probability density, $P(r)$, for the hydrogen atom in the ground state is:
+    
+    \begin{enumerate}
+        \item 
+       \input{figs/a}
+        \item 
+        \input{figs/b}
+        
+        \item 
+        \input{figs/c}
+        
+        \item 
+    \input{figs/d}
+    \end{enumerate}
+    
+\item Total binding energies of $^{15}\text{O}$, $^{16}\text{O}$, and $^{17}\text{O}$ are 111.96 MeV, 127.62 MeV, and 131.76 MeV, respectively. The energy gap between $1p_{1/2}$ and $1d_{5/2}$ neutron shells for the nuclei whose mass number is close to 16, is:
+    
+    \begin{enumerate}
+        \item 4.1 MeV
+        \item 11.5 MeV
+        \item 15.7 MeV
+        \item 19.8 MeV
+    \end{enumerate}
+  
+    \item A particle of mass $m$ is attached to a fixed point $O$ by a weightless inextensible string of length $a$. It is rotating under the gravity as shown in the figure.
+    
+    The Lagrangian of the particle is
+    \begin{equation*}
+    L(\theta, \phi) = \frac{1}{2} ma^2 \left( \dot{\theta}^2 + \sin^2 \theta \, \dot{\phi}^2 \right) - m g a \cos \theta
+    \end{equation*}
+    where $\theta$ and $\phi$ are the polar angles.
+    \input{figs/f1}
+    The Hamiltonian of the particle is
+    \begin{enumerate}
+        \item 
+        \begin{equation*}
+        H = \frac{1}{2 m a^2} \left( p_{\theta}^2 + \frac{p_{\phi}^2}{\sin^2 \theta} \right) - m g a \cos \theta
+        \end{equation*}
+        \item 
+        \begin{equation*}
+        H = \frac{1}{2 m a^2} \left( p_{\theta}^2 + \frac{p_{\phi}^2}{\sin^2 \theta} \right) + m g a \cos \theta
+        \end{equation*}
+        \item 
+        \begin{equation*}
+        H = \frac{1}{2 m a^2} \left( p_{\theta}^2 + p_{\phi}^2 \right) - m g a \cos \theta
+        \end{equation*}
+        \item 
+        \begin{equation*}
+        H = \frac{1}{2 m a^2} \left( p_{\theta}^2 + p_{\phi}^2 \right) + m g a \cos \theta
+        \end{equation*}
+    \end{enumerate}
+
+  
+
+    \item Given $\vec{F} = \vec{r} \times \vec{B}$, where $\vec{B} = B_0 (\hat{i} + \hat{j} + \hat{k})$ is a constant vector and $\vec{r}$ is the position vector. The value of $\oint_C \vec{F} \cdot d\vec{r}$, where $C$ is a circle of unit radius centered at origin is,
+    \input{figs/f2}
+    \begin{enumerate}
+        \item $0$
+        \item $2 \pi B_0$
+        \item $-2 \pi B_0$
+        \item $1$
+    \end{enumerate}
+
+    
+
+    \item The value of the integral $\oint_C \frac{e^z}{z} \, dz$, using the contour $C$ of circle with unit radius $|z| = 1$ is
+    \begin{enumerate}
+        \item $0$
+        \item $-2 \pi i$
+        \item $1 + 2 \pi i$
+        \item $2 \pi i$
+    \end{enumerate}
+
+    \item A paramagnetic system consisting of $N$ spin-half particles, is placed in an external magnetic field. It is found that $N/2$ spins are aligned parallel and the remaining $N/2$ spins are aligned antiparallel to the magnetic field. The statistical entropy of the system is
+    \begin{enumerate}
+        \item $2 N k_B \ln 2$
+        \item $\frac{N k_B}{2} \ln 2$
+        \item $\frac{3 N}{2} k_B \ln 2$
+        \item $N k_B \ln 2$
+    \end{enumerate}
+
+    \item The equilibrium vibration frequency for an oscillator is observed at $2990 \, \text{cm}^{-1}$. The ratio of the frequencies corresponding to the first and the fundamental spectral lines is $1.96$. Considering the oscillator to be anharmonic, the anharmonicity constant is
+    \begin{enumerate}
+        \item $0.005$
+        \item $0.02$
+        \item $0.05$
+        \item $0.1$
+    \end{enumerate}
+
+    \item At a certain temperature $T$, the average speed of nitrogen molecules in air is found to be $400 \, \text{m/s}$. The most probable and the root mean square speeds of the molecules are, respectively,
+    \begin{enumerate}
+        \item $355 \, \text{m/s}, \, 434 \, \text{m/s}$
+        \item $820 \, \text{m/s}, \, 917 \, \text{m/s}$
+        \item $152 \, \text{m/s}, \, 301 \, \text{m/s}$
+        \item $422 \, \text{m/s}, \, 600 \, \text{m/s}$
+    \end{enumerate}
+\raggedright
+\textbf{Common Data for Questions 48 and 49:}
+
+    The wavefunction of a particle moving in free space is given by
+    \begin{equation*}
+    \psi = e^{ikx} + 2e^{-ikx}.
+    \end{equation*}
+
+
+        \item The energy of the particle is
+        \begin{enumerate}
+            \item $\frac{5\hbar^2 k^2}{2m}$\\
+            \item $\frac{3\hbar^2 k^2}{4m}$\\
+            \item $\frac{\hbar^2 k^2}{2m}$\\
+            \item $\frac{\hbar^2 k^2}{m}$
+        \end{enumerate}
+
+        \item The probability current density for the real part of the wavefunction is
+        \begin{enumerate}
+            \item $1$
+            \item $\frac{\hbar k}{m}$
+            \item $\frac{\hbar k}{2m}$
+            \item $0$
+        \end{enumerate}
+
+\textbf{Common Data for Questions 50 and 51:}
+
+The dispersion relation for a one-dimensional monatomic crystal with lattice spacing $a$, which interacts via nearest neighbour harmonic potential, is given by
+    \begin{equation*}
+    \omega = A \left| \sin \frac{ka}{2} \right|,
+    \end{equation*}
+where $A$ is a constant of appropriate unit.
+
+    
+        \item The group velocity at the boundary of the first Brillouin zone is
+        \begin{enumerate}
+            \item $0$
+            \item $1$
+            \item $\frac{Aa}{2}$
+            \item $\frac{1}{2} \sqrt{\frac{Aa^2}{2}}$
+        \end{enumerate}
+
+        \item The force constant between the nearest neighbour of the lattice is $(M$ is the mass of the atom$)$
+        \begin{enumerate}
+            \item $\frac{M A^2}{4}$
+            \item $\frac{M A^2}{2}$
+            \item $M A^2$
+            \item $2 M A^2$
+        \end{enumerate}
+   
+  
+\textbf{Statement for Linked Answer Questions 52 and 53:}
+
+In a hydrogen atom, consider that the electronic charge is uniformly distributed in a spherical volume of radius $a \, (= 0.5 \times 10^{-10} \, \text{m})$ around the proton. The atom is placed in a uniform electric field $\vec{E} = 30 \times 10^6 \, \text{V/m}$. Assume that the spherical distribution of the negative charge remains undistorted under the electric field.
+
+
+    \item In the equilibrium condition, the separation between the positive and the negative charge centers is
+    \begin{enumerate}
+        \item $8.66 \times 10^{-16} \, \text{m}$
+        \item $2.60 \times 10^{-15} \, \text{m}$
+        \item $2.60 \times 10^{-16} \, \text{m}$
+        \item $8.66 \times 10^{-15} \, \text{m}$
+    \end{enumerate}
+\par
+\end{enumerate}
+
+\end{document}
+
