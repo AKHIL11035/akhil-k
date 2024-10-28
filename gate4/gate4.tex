@@ -1,0 +1,155 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[article]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                       
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{2015-XE-40-52}
+\author{EE24BTECH11035 - KOTHAPALLI AKHIL}
+{\let\newpage\relax\maketitle}
+
+\begin{enumerate}
+\item The velocity profile in turbulent flow through a pipe is approximated as
+    \begin{equation*}
+    \frac{u}{u_{\text{max}}} = \left(\frac{y}{R}\right)^{1/7}
+    \end{equation*}
+    where $u_{\text{max}}$ is the maximum velocity, $R$ is the radius, and $y$ is the distance measured normal to the pipe wall towards the centerline. If $u_{\text{av}}$ denotes the average velocity, the ratio $\frac{u_{\text{av}}}{u_{\text{max}}}$ is
+    \begin{enumerate}
+        \item $\frac{2}{15}$\\
+        \item $\frac{1}{5}$\\
+        \item $\frac{1}{3}$\\
+        \item $\frac{49}{60}$
+    \end{enumerate}
+
+\item A steel sphere (density $\rho_s = 7900 \, \text{kg/m}^3$) of diameter $0.1 \, \text{m}$ is dropped from rest in water (density $\rho_w = 1000 \, \text{kg/m}^3$). The gravitational acceleration is $9.81 \, \text{m/s}^2$. Assuming that the drag coefficient is constant and equal to $1.33$, the terminal velocity attained by the sphere in $\text{m/s}$ is \underline{\hspace{2cm}}
+    
+\item An inclined venturimeter connected to an inverted manometer is shown in the figure. The cross-sectional areas at the inlet and the throat are $2 \times 10^{-3} \, \text{m}^2$ and $2 \times 10^{-4} \, \text{m}^2$, respectively. The densities of water and oil are $1000 \, \text{kg/m}^3$ and $800 \, \text{kg/m}^3$, respectively. The gravitational acceleration is $9.81 \, \text{m/s}^2$. If the discharge of water through the venturimeter is $5 \times 10^{-4} \, \text{m}^3/\text{s}$, neglecting viscous effects and assuming uniform velocities across the inlet and the throat, the manometer reading $h$, in meters, will be \underline{\hspace{2cm}}
+\input{figs/f1}
+\item A plane jet of water with volumetric flow rate $0.012 \, \text{m}^3/\text{s}$ and cross-sectional area $6 \times 10^{-4} \, \text{m}^2$ strikes a stationary plate inclined at angle $\theta$ and leaves as two streams, as shown in the figure. The ratio of the discharge through section 2 to that through section 3 is $3:1$. The velocities may be considered uniform across the cross-sections, and the effects of friction may be neglected. The density of water is $1000 \, \text{kg/m}^3$. Ignoring the effects of gravity, the magnitude of the normal force exerted on the plate, in N, is
+
+\input{figs/f2}
+\item Arrange the following elements in order of increasing melting point:\\
+(P) Gallium\\
+(Q) Tungsten\\
+(R) Aluminium\\
+(S) Gold
+
+\begin{enumerate}
+    \item (A) $P < R < Q < S$
+    \item (B) $S < P < R < Q$
+    \item (C) $P < R < S < Q$
+    \item (D) $R < S < Q < P$
+\end{enumerate}
+\item When the atoms in a solid are separated by their equilibrium distance,
+\begin{enumerate}
+    \item (A) the potential energy of the solid is lowest
+    \item (B) the force of attraction between the atoms is maximum
+    \item (C) the force of repulsion between the atoms is zero
+    \item (D) the potential energy of the solid is zero
+\end{enumerate}
+\item To which of the following categories of materials does Teflon (PTFE) belong?
+\begin{enumerate}
+    \item (A) Thermosets
+    \item (B) Thermoplastics
+    \item (C) Elastomers
+    \item (D) Block copolymers
+\end{enumerate}
+
+\item Which of the following statements is \textbf{TRUE} about the glass transition temperature ($T_g$)?
+    \begin{enumerate}
+        \item $T_g$ appears below the melting temperature in a perfectly crystalline material
+        \item Upon heating through $T_g$, heat capacity remains constant but the thermal expansion coefficient changes
+        \item Upon heating through $T_g$, heat capacity changes but the thermal expansion coefficient remains the same
+        \item Upon heating through $T_g$, both the heat capacity and thermal expansion coefficient change
+    \end{enumerate}
+   
+\item The slope of a graph of $\log_e(\text{conductivity})$ versus $1/T$ (where $T$ is the temperature) for an intrinsic semiconductor with energy gap $E_g$ is:
+    \begin{enumerate}
+        \item $E_g / 2k$
+        \item $-E_g / 2k$
+        \item $E_g / k$
+        \item $-E_g / k$
+    \end{enumerate}
+   
+\item    Which is \textbf{NOT} a ceramic forming process?
+    \begin{enumerate}
+        \item extrusion
+        \item slip casting
+        \item forging
+        \item tape casting
+    \end{enumerate}
+   
+\item    Which of the following is \textbf{NOT} a soft magnetic material?
+    \begin{enumerate}
+        \item Iron-silicon steel
+        \item Nickel zinc ferrite
+        \item Nickel iron alloy
+        \item Alnico
+    \end{enumerate}
+    
+ \item The eutectic reaction is \\
+    \textbf{[Note: S = solid; L = liquid]}
+    \begin{enumerate}
+        \item $L \rightleftharpoons S_1 + S_2 + S_3$
+        \item $L \rightleftharpoons S_1 + S_2$
+        \item $L_1 + S_1 \rightleftharpoons L_2 + S_2$
+        \item $L_1 + S_1 \rightleftharpoons S_2 + S_3$
+    \end{enumerate}
+  
+  \item  Vacancies play an important role in:
+    \begin{enumerate}
+        \item deformation twinning
+        \item self diffusion
+        \item strain hardening
+        \item cross-slip
+    \end{enumerate}
+   
+\end{enumerate}
+
+
+
+\end{document}
+
