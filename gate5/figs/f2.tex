@@ -1,0 +1,42 @@
+% File: soil_layers_figure.tex
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.6\textwidth}{!}{
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\normalsize]
+    
+    % Horizontal lines representing different soil layers
+    \draw [line width=0.7pt] (7.5,14.25) -- (12.75,14.25);  % Top line
+    \draw [line width=0.7pt] (7.25,12) -- (13,12);          % Middle line (sand/clay boundary)
+    
+    % Vertical measurement line with arrow
+    \draw [line width=0.7pt, <->, >=Stealth] (7.75,14.25) -- (7.75,12);
+    
+    % Arrows on the right side representing pressure
+    \draw [line width=0.7pt] (17,14.25) -- (17,13);  % Vertical line for arrows
+    \foreach \y in {14.25, 14, 13.75, 13.5, 13.25, 13} {
+        \draw [->, >=Stealth] (15, \y) -- (17, \y);
+    }
+    \draw [line width=0.7pt] (15,14.25) -- (15,13);
+    
+    % Labels for different layers
+    \node [font=\large] at (10,15) {\textbf{Sand}};
+    \node [font=\large] at (9.5,13.25) {\textbf{Clay}};
+    \node [font=\normalsize] at (9.5,11.25) {\textbf{Impermeable stratum}};
+    
+    % Additional text annotations
+    \node [font=\normalsize] at (15.75,14.5) {$u_0=145\text{ kPa}$};
+    \node [font=\small] at (9,12.75) {$C_v=3.0 \, \text{mm}^2/\text{min}$};
+    \node [font=\small] at (9.25,12.25) {$T_v(90)=0.85$};
+    
+    % Dotted lines representing boundaries or separation
+    \foreach \y in {14.75, 15, 15.25} {
+        \node [font=\Huge] at (10.25, \y) {\textbf{. . . . . . . . . . . . . . .}};
+    }
+
+    \end{circuitikz}
+    }
+    \caption{Diagram of soil layers with pressure and parameters.}
+    \label{fig:soil_layers}
+\end{figure}
+
