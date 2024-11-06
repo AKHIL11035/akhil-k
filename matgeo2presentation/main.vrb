@@ -1,0 +1,14 @@
+\frametitle{C code for solution}
+\begin{lstlisting}[style=Cstyle]
+        free(sum);
+        free(unitVec);
+    }
+
+    free(a);
+    free(b);
+    free(c);
+    fclose(outputFile);
+
+    return 0;
+}
+\end{lstlisting}
