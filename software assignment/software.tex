@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{9in}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{\textbf{Eigen value calculation}}
+\author{Akhil kothapalli}
+
+\begin{document}
+\maketitle
+In this report, we will know about Eigenvalues, Various algorithms for finding eigenvalues of matrices, Comparison between different algorithms and their complexities, The code structure for finding eigenvalues.
+\section{Introduction}
+  Eigen values plays a vital role in understanding the behaviour of Linear Transformations . These are fundamental in many scientific and Engineering fields.\\
+  
+
+\section{Eigen values and Eigen vectors}
+    \subsection{Overview of Eigenvalue}
+       The eigenvalues of a matrix $A \in \mathbf{C}^{n \times n}$ are the n roots of its characteristic polynomial $p(z)=det(zI-A)$. The set of these roots is called the spectrum and is denoted by $\lambda(A)$. If $\lambda(A)={\lambda_1,\dots,\lambda_n}$, then it follows that
+     \begin{equation*}
+    \det(A) = \lambda_1 \lambda_2 \dots \lambda_n
+\end{equation*}
+Moreover, Trace of A is sum of eigen values, i.e,
+\begin{equation*}
+    tr(A)=\lambda_1+\lambda_2+\lambda_3\dots+\lambda_n
+\end{equation*}
+
+    \subsection{Overview of Eigenvector}
+        If $\lambda\in\lambda(A)$, then the nonzero vectors $x\in\mathbf{C}^n$ that satisfy
+        \begin{equation*}
+        Ax=\lambda x
+        \end{equation*}
+        are referred to as eigenvectors. More precisely, $x$ is a right eigenvector for $\lambda$ if $ Ax=\lambda x$ and a left eigenvector if $x^HA=\lambda x^H$. Unless ostherwise stated, "eigenvector" means "right eigenvector".
+\section{Different Methods of finding eigen values}
+\section*{3.1 Methods}
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+\textbf{Method} & \textbf{Large Matrices} & \textbf{Non-Symmetric } & \textbf{Sparse} & \textbf{Complexity} \\ \hline
+\textbf{Lanczos} & \checkmark & \times & \checkmark & O(nk) \\ \hline
+\textbf{Arnoldi} & \checkmark & \checkmark & \checkmark & O(nk) \\ \hline
+\textbf{Jacobi} & \times & \times & \checkmark & O(n^3) \\ \hline
+\textbf{QR Algorithm} & \checkmark & \checkmark & \checkmark & O(n^3) \\ \hline
+\end{array}
+\]
+
+\section*{3.2 Comparison}
+\[
+\begin{array}{|c|c|c|c|}
+\hline
+\textbf{Method} & \textbf{Applicability} & \textbf{Accuracy} & \textbf{Convergence Rate}  \\ \hline
+\textbf{Jacobi Method} & Symmetric matrices & \textit{High (small values)} & Moderate  \\ \hline
+\textbf{QR Algorithm} & General matrices & \textit{Very High} & Fast  \\ \hline
+\textbf{Lanczos Method} & Large sparse symmetric matrices & \textit{Moderate} & Fast for large n . \\ \hline
+\textbf{Arnoldi Method} & General large matrices & \textit{High} & Fast  \\ \hline
+\end{array}
+\]
+
+
+\section{Jacobi Method Overview}
+\begin{itemize}
+    \item Start with a symmetric matrix. check whether the matrix is diagonal or not. If it is diagonal matrix , the elements of principle diagonal are Eigen values of the matrix.
+    \item Find the Largest off-diagonal element $A_{pq}$ of the given Non-diagonal symmetric matrix.
+    \item compute Rotation Angle $\theta$ i.e.,
+    \begin{equation*}
+	    \theta=\frac{1}{2}tan^{-1}{{\frac{2A_{pq}}{A_{pp}-A_{qq}}}}
+    \end{equation*}
+    \item construct a matrix J , which makes rotation in p-q plane.
+    \item Update the given matrix A as $A'=J^TAJ$ till we get a diagonal matrix.
+\end{itemize}
+\subsection{Reason for Choosing Jacobi's Method}
+\begin{itemize}
+   \item Accuracy, Simplicity.
+   \item works well for small to medium sized elements.
+    \item  It can sometimes compute tiny eigenvalues and their
+eigenvectors with much higher accuracy than other methods. 
+   \item Easy to code in C language.
+\end{itemize}
+
+\section{Implementation}
+       \subsection{Code Structure}
+       \begin{itemize}
+           \item Contains the functions: matrix multiplications , matrix transposing, checking whether the matrix is diagonal or not,e.t.c.
+           \item  In main function, There is a while loop ,For iteration of matrices till the matrix becomes diagonal matrix. 
+       \end{itemize}
+        
+       
+\section{Conclusion}
+ This report mainly concentrates on Calculation of Eigen values for a Symmetric Matrix using Jacobi's method. Which is an iterative way of rotating a matrix and making the matrix diagonal. Since, jacobi's iterative method is simple and gives high precision for small values it is used more widely for symmetric matrices. 
+\section{References}
+    Matrix computations,Book by Gene H. Golub\\
+    Linear Algebra and its applications ,Gilbert strang
+
+\end{document}
+
